@@ -1,5 +1,9 @@
 # Tweet Classification for Disaster Prediction
 
+This repository contains code for a project aimed at classifying tweets to determine if they relate to real-life disasters. Using a dataset from Kaggle, the project explores different machine learning approaches, including Logistic Regression and BERT-based models, to classify tweets accurately.
+
+
+
 ## Overview
 
 This project aims to predict whether a tweet is related to a real-life disaster using machine learning techniques. The dataset used for this classification task is sourced from Kaggle and contains various features such as tweet ID, keyword, location, and the tweet content itself.
