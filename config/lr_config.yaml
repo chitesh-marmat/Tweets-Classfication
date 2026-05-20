@@ -1,0 +1,20 @@
+model: logistic_regression
+
+data:
+  train_path: data/raw/train.csv
+  test_path: data/raw/test.csv
+  test_size: 0.25
+  random_state: 42
+
+features:
+  max_features: 5000
+
+model_params:
+  C: 1.0
+  max_iter: 1000
+  random_state: 42
+
+output:
+  model_dir: models/lr
+  submission_path: outputs/submissions/submission_lr.csv
+  figures_dir: outputs/figures/lr

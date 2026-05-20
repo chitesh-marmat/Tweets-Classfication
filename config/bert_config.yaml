@@ -1,0 +1,20 @@
+model: distilbert
+
+data:
+  train_path: data/raw/train.csv
+  test_path: data/raw/test.csv
+  test_size: 0.20
+  random_state: 42
+
+model_params:
+  model_name: distilbert-base-uncased
+  max_length: 128
+  batch_size: 16
+  lr: 5.0e-5
+  epochs: 3
+  random_state: 42
+
+output:
+  model_dir: models/bert
+  submission_path: outputs/submissions/submission_bert.csv
+  figures_dir: outputs/figures/bert
