@@ -58,6 +58,20 @@ After training:
 - model files are saved to `models/lr/` or `models/bert/`
 - confusion matrix + feature importance plots saved to `outputs/figures/`
 
+### Demo (classify a single tweet)
+
+```bash
+python -m src.demo --model lr "Wildfire spreading across 10,000 acres, residents evacuating"
+python -m src.demo --model lr "I love watching the sunset after a long day"
+```
+
+Output:
+```
+Tweet    : Wildfire spreading across 10,000 acres, residents evacuating
+Prediction : DISASTER
+Confidence : 94.2%
+```
+
 ### Predict (generate submission CSV)
 
 ```bash
